@@ -1,0 +1,10 @@
+{
+	"item.itprojekt.test_item": "Testovací Item",
+	"item.itprojekt.copper_ingot" : "Měďěný Ingot",
+	
+	"block.itprojekt.test_block" : "Testovací Block",
+	"block.itprojekt.copper_ore" : "Měďěná Ruda",
+	
+	
+	"itemGroup.itprojekt" : "IT Projekt"
+}

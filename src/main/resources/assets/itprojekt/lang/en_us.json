@@ -1,0 +1,13 @@
+{
+	"item.itprojekt.test_item": "Test Item",
+	"item.itprojekt.copper_ingot": "Copper Ingot",
+	
+	
+	"block.itprojekt.test_block" : "Test Block",
+	"block.itprojekt.copper_ore" : "Copper Ore",
+
+	"block.itprojekt.quarry" : "Quarry",
+	
+	
+	"itemGroup.itprojekt" : "IT Project"
+}

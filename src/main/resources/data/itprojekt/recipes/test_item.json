@@ -1,0 +1,19 @@
+{
+	"type": "minecraft:crafting_shapeless",
+	"ingredients": [
+		{
+			"item" : "itprojekt:copper_ingot"
+		},
+		{
+			"item" : "minecraft:obsidian"
+		},
+		{
+			"item" : "itprojekt:copper_ingot"
+		}
+	],
+
+	"result" : {
+		"item" : "itprojekt:test_item",
+		"count" : 8
+	}
+}
