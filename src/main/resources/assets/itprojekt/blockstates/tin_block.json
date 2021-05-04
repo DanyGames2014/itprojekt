@@ -1,0 +1,5 @@
+{
+	"variants" : {
+		"": { "model" : "itprojekt:block/tin_block"}
+	}
+}

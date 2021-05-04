@@ -15,4 +15,6 @@ public class ItemInit {
 	
 	public static final RegistryObject<Item> COPPER_INGOT = ITEMS.register("copper_ingot", () -> new Item(new Item.Properties().tab(ITProjektItemGroup.ITPROJEKT)));
 	
+	public static final RegistryObject<Item> TIN_INGOT = ITEMS.register("tin_ingot", () -> new Item(new Item.Properties().tab(ITProjektItemGroup.ITPROJEKT)));
+	
 }

@@ -1,10 +1,14 @@
 {
 	"item.itprojekt.test_item": "Test Item",
 	"item.itprojekt.copper_ingot": "Copper Ingot",
+	"item.itprojekt.tin_ingot": "Tin Ingot",
 	
 	
 	"block.itprojekt.test_block" : "Test Block",
 	"block.itprojekt.copper_ore" : "Copper Ore",
+	"block.itprojekt.copper_block" : "Copper Block",
+	"block.itprojekt.tin_ore" : "Tin Ore",
+	"block.itprojekt.tin_block" : "Tin Block",
 
 	"block.itprojekt.quarry" : "Quarry",
 	

@@ -23,8 +23,20 @@ public class BlockInit {
 					.harvestTool(ToolType.PICKAXE).harvestLevel(1).sound(SoundType.CROP)));
 
 	public static final RegistryObject<Block> COPPER_ORE = BLOCKS.register("copper_ore",
-			() -> new Block(AbstractBlock.Properties.of(Material.STONE, MaterialColor.COLOR_GRAY).strength(3f, 3f)
+			() -> new Block(AbstractBlock.Properties.of(Material.STONE, MaterialColor.COLOR_GRAY).strength(3f, 3f) //255,120,30
 					.harvestTool(ToolType.PICKAXE).harvestLevel(1).sound(SoundType.STONE)));
+	
+	public static final RegistryObject<Block> COPPER_BLOCK = BLOCKS.register("copper_block",
+			() -> new Block(AbstractBlock.Properties.of(Material.HEAVY_METAL, MaterialColor.COLOR_ORANGE).strength(3f, 3f)
+					.harvestTool(ToolType.PICKAXE).harvestLevel(1).sound(SoundType.METAL)));
+	
+	public static final RegistryObject<Block> TIN_ORE = BLOCKS.register("tin_ore",
+			() -> new Block(AbstractBlock.Properties.of(Material.STONE, MaterialColor.COLOR_GRAY).strength(3f, 3f) //255,255,255
+					.harvestTool(ToolType.PICKAXE).harvestLevel(1).sound(SoundType.STONE)));
+	
+	public static final RegistryObject<Block> TIN_BLOCK = BLOCKS.register("tin_block",
+			() -> new Block(AbstractBlock.Properties.of(Material.HEAVY_METAL, MaterialColor.COLOR_LIGHT_GRAY).strength(3f, 3f)
+					.harvestTool(ToolType.PICKAXE).harvestLevel(1).sound(SoundType.METAL)));
 	
 	public static final RegistryObject<Block> QUARRY = BLOCKS.register("quarry", () -> new QuarryBlock());
 	
