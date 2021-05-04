@@ -10,6 +10,7 @@ import net.minecraft.item.ArmorItem;
 import net.minecraft.item.AxeItem;
 import net.minecraft.item.HoeItem;
 import net.minecraft.item.Item;
+import net.minecraft.item.PickaxeItem;
 import net.minecraft.item.ShovelItem;
 import net.minecraft.item.SwordItem;
 import net.minecraftforge.fml.RegistryObject;
@@ -25,7 +26,7 @@ public class ItemInit {
 	
 	public static final RegistryObject<Item> TIN_INGOT = ITEMS.register("tin_ingot", () -> new Item(new Item.Properties().tab(ITProjektItemGroup.ITPROJEKT)));
 	
-	public static final RegistryObject<Item> COPPER_PICKAXE = ITEMS.register("copper_pickaxe", () -> new SwordItem(CustomToolMaterial.COPPER, 1, -1f, new Item.Properties().tab(ITProjektItemGroup.ITPROJEKT)));
+	public static final RegistryObject<Item> COPPER_PICKAXE = ITEMS.register("copper_pickaxe", () -> new PickaxeItem(CustomToolMaterial.COPPER, 1, -1f, new Item.Properties().tab(ITProjektItemGroup.ITPROJEKT)));
 	
 	public static final RegistryObject<Item> COPPER_AXE = ITEMS.register("copper_axe", () -> new AxeItem(CustomToolMaterial.COPPER, 3, -1f, new Item.Properties().tab(ITProjektItemGroup.ITPROJEKT)));
 	
