@@ -26,15 +26,15 @@ public class ItemInit {
 	
 	public static final RegistryObject<Item> TIN_INGOT = ITEMS.register("tin_ingot", () -> new Item(new Item.Properties().tab(ITProjektItemGroup.ITPROJEKT)));
 	
-	public static final RegistryObject<Item> COPPER_PICKAXE = ITEMS.register("copper_pickaxe", () -> new PickaxeItem(CustomToolMaterial.COPPER, 1, -1f, new Item.Properties().tab(ITProjektItemGroup.ITPROJEKT)));
+	public static final RegistryObject<Item> COPPER_PICKAXE = ITEMS.register("copper_pickaxe", () -> new PickaxeItem(CustomToolMaterial.COPPER, 1, -2.8f, new Item.Properties().tab(ITProjektItemGroup.ITPROJEKT)));
 	
-	public static final RegistryObject<Item> COPPER_AXE = ITEMS.register("copper_axe", () -> new AxeItem(CustomToolMaterial.COPPER, 3, -1f, new Item.Properties().tab(ITProjektItemGroup.ITPROJEKT)));
+	public static final RegistryObject<Item> COPPER_AXE = ITEMS.register("copper_axe", () -> new AxeItem(CustomToolMaterial.COPPER, 7, -3.2f, new Item.Properties().tab(ITProjektItemGroup.ITPROJEKT)));
 	
-	public static final RegistryObject<Item> COPPER_SHOVEL = ITEMS.register("copper_shovel", () -> new ShovelItem(CustomToolMaterial.COPPER, 1, -1f, new Item.Properties().tab(ITProjektItemGroup.ITPROJEKT)));
+	public static final RegistryObject<Item> COPPER_SHOVEL = ITEMS.register("copper_shovel", () -> new ShovelItem(CustomToolMaterial.COPPER, 1, -3f, new Item.Properties().tab(ITProjektItemGroup.ITPROJEKT)));
 	
-	public static final RegistryObject<Item> COPPER_SWORD = ITEMS.register("copper_sword", () -> new SwordItem(CustomToolMaterial.COPPER, 3, -1f, new Item.Properties().tab(ITProjektItemGroup.ITPROJEKT)));
+	public static final RegistryObject<Item> COPPER_SWORD = ITEMS.register("copper_sword", () -> new SwordItem(CustomToolMaterial.COPPER, 5, -2.5f, new Item.Properties().tab(ITProjektItemGroup.ITPROJEKT)));
 	
-	public static final RegistryObject<Item> COPPER_HOE = ITEMS.register("copper_hoe", () -> new HoeItem(CustomToolMaterial.COPPER, 1, -1f, new Item.Properties().tab(ITProjektItemGroup.ITPROJEKT)));
+	public static final RegistryObject<Item> COPPER_HOE = ITEMS.register("copper_hoe", () -> new HoeItem(CustomToolMaterial.COPPER, 0, -2f, new Item.Properties().tab(ITProjektItemGroup.ITPROJEKT)));
 	
 	public static final RegistryObject<Item> COPPER_HELMET = ITEMS.register("copper_helmet", () -> new ArmorItem(CustomArmorMaterial.COPPER, EquipmentSlotType.HEAD, new Item.Properties().tab(ITProjektItemGroup.ITPROJEKT)));
 	
