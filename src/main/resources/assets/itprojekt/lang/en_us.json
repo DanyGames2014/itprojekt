@@ -2,6 +2,17 @@
 	"item.itprojekt.test_item": "Test Item",
 	"item.itprojekt.copper_ingot": "Copper Ingot",
 	"item.itprojekt.tin_ingot": "Tin Ingot",
+
+	"item.itprojekt.copper_sword": "Copper Sword",
+	"item.itprojekt.copper_pickaxe": "Copper Pickaxe",
+	"item.itprojekt.coppper_axe": "Copper Axe",
+	"item.itprojekt.copper_shovel": "Copper Shovel",
+	"item.itprojekt.copper_hoe": "Copper Hoe",
+
+	"item.itprojekt.copper_helmet": "Copper Helmet",
+	"item.itprojekt.copper_chestplate": "Copper Chestplate",
+	"item.itprojekt.copper_leggings": "Copper Leggings",
+	"item.itprojekt.copper_boots": "Copper Boots",
 	
 	
 	"block.itprojekt.test_block" : "Test Block",
