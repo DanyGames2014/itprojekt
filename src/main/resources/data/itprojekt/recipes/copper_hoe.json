@@ -1,19 +1,23 @@
 {
 	"type": "minecraft:crafting_shaped",
 	"pattern": [
-		"I I",
-		"I I",
-		"   "
+		"CC ",
+		" I ",
+		" I "
 	],
 	"key": {
-		"I":{
+		"C":{
 			"tag" : "forge:ingots/copper"
+		},
+
+		"I":{
+			"tag" : "forge:rods/wooden"
 		}
 
 	},
 
 	"result": {
-		"item": "itprojekt:copper_boots",
+		"item": "itprojekt:copper_hoe",
 		"count": 1
 	}
 }

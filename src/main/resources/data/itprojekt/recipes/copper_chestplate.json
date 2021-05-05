@@ -7,7 +7,7 @@
 	],
 	"key": {
 		"I":{
-			"item" : "itprojekt:copper_ingot"
+			"tag" : "forge:ingots/copper"
 		}
 
 	},
