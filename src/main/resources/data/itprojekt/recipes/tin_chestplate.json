@@ -1,7 +1,7 @@
 {
 	"type": "minecraft:crafting_shaped",
 	"pattern": [
-		"III",
+		"I I",
 		"III",
 		"III"
 	],
@@ -13,7 +13,7 @@
 	},
 
 	"result": {
-		"item": "itprojekt:tin_block",
+		"item": "itprojekt:tin_chestplate",
 		"count": 1
 	}
 }

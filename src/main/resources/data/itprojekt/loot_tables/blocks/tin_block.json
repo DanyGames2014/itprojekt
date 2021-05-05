@@ -6,7 +6,7 @@
 			"entries" : [
 				{
 					"type" : "minecraft:item",
-					"name" : "itprojekt:tin_block.json"
+					"name" : "itprojekt:tin_block"
 				}
 			]
 		}

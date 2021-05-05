@@ -2,8 +2,8 @@
 	"type": "minecraft:crafting_shaped",
 	"pattern": [
 		"III",
-		"III",
-		"III"
+		"I I",
+		"   "
 	],
 	"key": {
 		"I":{
@@ -13,7 +13,7 @@
 	},
 
 	"result": {
-		"item": "itprojekt:tin_block",
+		"item": "itprojekt:tin_helmet",
 		"count": 1
 	}
 }

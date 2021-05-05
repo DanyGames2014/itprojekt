@@ -5,7 +5,7 @@
 
 	"item.itprojekt.copper_sword": "Copper Sword",
 	"item.itprojekt.copper_pickaxe": "Copper Pickaxe",
-	"item.itprojekt.coppper_axe": "Copper Axe",
+	"item.itprojekt.copper_axe": "Copper Axe",
 	"item.itprojekt.copper_shovel": "Copper Shovel",
 	"item.itprojekt.copper_hoe": "Copper Hoe",
 
@@ -14,6 +14,16 @@
 	"item.itprojekt.copper_leggings": "Copper Leggings",
 	"item.itprojekt.copper_boots": "Copper Boots",
 	
+	"item.itprojekt.tin_sword": "Tin Sword",
+	"item.itprojekt.tin_pickaxe": "Tin Pickaxe",
+	"item.itprojekt.tin_axe": "Tin Axe",
+	"item.itprojekt.tin_shovel": "Tin Shovel",
+	"item.itprojekt.tin_hoe": "Tin Hoe",
+
+	"item.itprojekt.tin_helmet": "Tin Helmet",
+	"item.itprojekt.tin_chestplate": "Tin Chestplate",
+	"item.itprojekt.tin_leggings": "Tin Leggings",
+	"item.itprojekt.tin_boots": "Tin Boots",
 	
 	"block.itprojekt.test_block" : "Test Block",
 	"block.itprojekt.copper_ore" : "Copper Ore",

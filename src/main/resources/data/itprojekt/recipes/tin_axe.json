@@ -1,19 +1,23 @@
 {
 	"type": "minecraft:crafting_shaped",
 	"pattern": [
-		"III",
-		"III",
-		"III"
+		"CC ",
+		"CI ",
+		" I "
 	],
 	"key": {
-		"I":{
+		"C":{
 			"tag" : "forge:ingots/tin"
+		},
+
+		"I":{
+			"tag" : "forge:rods/wooden"
 		}
 
 	},
 
 	"result": {
-		"item": "itprojekt:tin_block",
+		"item": "itprojekt:tin_axe",
 		"count": 1
 	}
 }
