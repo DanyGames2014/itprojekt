@@ -1,19 +1,19 @@
 {
 	"type": "minecraft:crafting_shaped",
 	"pattern": [
-		"III",
-		"III",
-		"III"
+		"C C",
+		"C C",
+		"   "
 	],
 	"key": {
-		"I":{
+		"C":{
 			"tag" : "forge:ingots/bronze"
 		}
 
 	},
 
 	"result": {
-		"item": "itprojekt:bronze_block",
+		"item": "itprojekt:bronze_boots",
 		"count": 1
 	}
 }

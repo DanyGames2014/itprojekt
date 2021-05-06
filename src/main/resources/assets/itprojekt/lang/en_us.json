@@ -2,6 +2,7 @@
 	"item.itprojekt.test_item": "Test Item",
 	"item.itprojekt.copper_ingot": "Copper Ingot",
 	"item.itprojekt.tin_ingot": "Tin Ingot",
+	"item.itprojekt.bronze_ingot": "Bronze Ingot",
 
 	"item.itprojekt.copper_sword": "Copper Sword",
 	"item.itprojekt.copper_pickaxe": "Copper Pickaxe",
@@ -14,6 +15,17 @@
 	"item.itprojekt.copper_leggings": "Copper Leggings",
 	"item.itprojekt.copper_boots": "Copper Boots",
 	
+	"item.itprojekt.bronze_sword": "Bronze Sword",
+	"item.itprojekt.bronze_pickaxe": "Bronze Pickaxe",
+	"item.itprojekt.bronze_axe": "Bronze Axe",
+	"item.itprojekt.bronze_shovel": "Bronze Shovel",
+	"item.itprojekt.bronze_hoe": "Bronze Hoe",
+
+	"item.itprojekt.bronze_helmet": "Bronze Helmet",
+	"item.itprojekt.bronze_chestplate": "Bronze Chestplate",
+	"item.itprojekt.bronze_leggings": "Bronze Leggings",
+	"item.itprojekt.bronze_boots": "Bronze Boots",
+
 	"item.itprojekt.tin_sword": "Tin Sword",
 	"item.itprojekt.tin_pickaxe": "Tin Pickaxe",
 	"item.itprojekt.tin_axe": "Tin Axe",
@@ -28,6 +40,7 @@
 	"block.itprojekt.test_block" : "Test Block",
 	"block.itprojekt.copper_ore" : "Copper Ore",
 	"block.itprojekt.copper_block" : "Copper Block",
+	"block.itprojekt.bronze_block" : "Bronze Block",
 	"block.itprojekt.tin_ore" : "Tin Ore",
 	"block.itprojekt.tin_block" : "Tin Block",
 

@@ -1,19 +1,23 @@
 {
 	"type": "minecraft:crafting_shaped",
 	"pattern": [
-		"III",
-		"III",
-		"III"
+		"CCC",
+		" I ",
+		" I "
 	],
 	"key": {
-		"I":{
+		"C":{
 			"tag" : "forge:ingots/bronze"
+		},
+
+		"I":{
+			"tag" : "forge:rods/wooden"
 		}
 
 	},
 
 	"result": {
-		"item": "itprojekt:bronze_block",
+		"item": "itprojekt:bronze_pickaxe",
 		"count": 1
 	}
 }

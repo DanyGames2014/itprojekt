@@ -1,19 +1,19 @@
 {
 	"type": "minecraft:crafting_shaped",
 	"pattern": [
-		"III",
-		"III",
-		"III"
+		"C C",
+		"CCC",
+		"CCC"
 	],
 	"key": {
-		"I":{
+		"C":{
 			"tag" : "forge:ingots/bronze"
 		}
 
 	},
 
 	"result": {
-		"item": "itprojekt:bronze_block",
+		"item": "itprojekt:bronze_chestplate",
 		"count": 1
 	}
 }
