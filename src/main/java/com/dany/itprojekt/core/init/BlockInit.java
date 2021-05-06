@@ -38,6 +38,10 @@ public class BlockInit {
 			() -> new Block(AbstractBlock.Properties.of(Material.HEAVY_METAL, MaterialColor.COLOR_LIGHT_GRAY).strength(3f, 3f)
 					.harvestTool(ToolType.PICKAXE).harvestLevel(1).sound(SoundType.METAL)));
 	
+	public static final RegistryObject<Block> BRONZE_BLOCK = BLOCKS.register("bronze_block",
+			() -> new Block(AbstractBlock.Properties.of(Material.HEAVY_METAL, MaterialColor.COLOR_LIGHT_GRAY).strength(3f, 3f) // approx 255,100,25
+					.harvestTool(ToolType.PICKAXE).harvestLevel(1).sound(SoundType.METAL)));
+	
 	public static final RegistryObject<Block> QUARRY = BLOCKS.register("quarry", () -> new QuarryBlock());
 	
 	public static final RegistryObject<Block> DISPLAY_CASE = BLOCKS.register("display_case", () -> new DisplayCaseBlock());

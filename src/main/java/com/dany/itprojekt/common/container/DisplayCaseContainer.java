@@ -30,6 +30,9 @@ public class DisplayCaseContainer extends Container{
 		this.addSlot(new Slot((IInventory) tile, 0, 80, 35));
 		
 		// Player Inventory
+		// col - column in inventory
+		// row - row in inventory
+		// 9 - amount of slots in one row
 		for(int row = 0; row < 3; row++) {
 			for(int col = 0; col < 9; col++) {
 				this.addSlot(new Slot(playerInv, col + row * 9 + 9, 8 + col * 18, 166 - (4-row) * 18 - 10));

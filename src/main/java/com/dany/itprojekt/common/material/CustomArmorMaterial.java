@@ -12,8 +12,9 @@ import net.minecraft.util.SoundEvents;
 
 public enum CustomArmorMaterial implements IArmorMaterial {
 	
-	COPPER("copper", 2, new int[] {2,4,5,2}, 5000, SoundEvents.ARMOR_EQUIP_IRON, 0f, 0.1f, () -> Ingredient.of(ItemInit.COPPER_INGOT.get())),
-	TIN("tin", 2, new int[] {2,3,4,2}, 5000, SoundEvents.ARMOR_EQUIP_IRON, 0f, 0.1f, () -> Ingredient.of(ItemInit.COPPER_INGOT.get()));
+	COPPER("copper", 2, new int[] {2,4,5,2}, 8, SoundEvents.ARMOR_EQUIP_IRON, 0f, 0.1f, () -> Ingredient.of(ItemInit.COPPER_INGOT.get())),
+	TIN("tin", 2, new int[] {2,3,4,2}, 7, SoundEvents.ARMOR_EQUIP_IRON, 0f, 0.1f, () -> Ingredient.of(ItemInit.COPPER_INGOT.get())),
+	BRONZE("bronze", 2, new int[] {3,5,6,3}, 15, SoundEvents.ARMOR_EQUIP_IRON, 0.1f, 0.2f, () -> Ingredient.of(ItemInit.COPPER_INGOT.get()));
 
 	private static final int[] baseDurability = { 128, 144, 160, 112 };
 	private final String name;

@@ -17,6 +17,11 @@ import net.minecraftforge.fml.RegistryObject;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 
+/**
+ * 
+ * @author Daniel
+ *
+ */
 public class ItemInit {
 	public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, ProjektMod.MOD_ID);
 	
@@ -25,6 +30,8 @@ public class ItemInit {
 	public static final RegistryObject<Item> TIN_INGOT = ITEMS.register("tin_ingot", () -> new Item(new Item.Properties().tab(ITProjektItemGroup.ITPROJEKT)));
 	
 	public static final RegistryObject<Item> COPPER_INGOT = ITEMS.register("copper_ingot", () -> new Item(new Item.Properties().tab(ITProjektItemGroup.ITPROJEKT)));
+	
+	public static final RegistryObject<Item> BRONZE_INGOT = ITEMS.register("bronze_ingot", () -> new Item(new Item.Properties().tab(ITProjektItemGroup.ITPROJEKT)));
 	
 	public static final RegistryObject<Item> TIN_PICKAXE = ITEMS.register("tin_pickaxe", () -> new PickaxeItem(CustomToolMaterial.TIN, 1, -2.8f, new Item.Properties().tab(ITProjektItemGroup.ITPROJEKT)));
 	
@@ -62,7 +69,23 @@ public class ItemInit {
 	
 	public static final RegistryObject<Item> COPPER_BOOTS = ITEMS.register("copper_boots", () -> new ArmorItem(CustomArmorMaterial.COPPER, EquipmentSlotType.FEET, new Item.Properties().tab(ITProjektItemGroup.ITPROJEKT)));
 
+	public static final RegistryObject<Item> BRONZE_PICKAXE = ITEMS.register("bronze_pickaxe", () -> new PickaxeItem(CustomToolMaterial.BRONZE, 1, -2.6f, new Item.Properties().tab(ITProjektItemGroup.ITPROJEKT)));
 	
+	public static final RegistryObject<Item> BRONZE_AXE = ITEMS.register("bronze_axe", () -> new AxeItem(CustomToolMaterial.BRONZE, 8, -3.0f, new Item.Properties().tab(ITProjektItemGroup.ITPROJEKT)));
+	
+	public static final RegistryObject<Item> BRONZE_SHOVEL = ITEMS.register("bronze_shovel", () -> new ShovelItem(CustomToolMaterial.BRONZE, 1, -2.9f, new Item.Properties().tab(ITProjektItemGroup.ITPROJEKT)));
+	
+	public static final RegistryObject<Item> BRONZE_SWORD = ITEMS.register("bronze_sword", () -> new SwordItem(CustomToolMaterial.BRONZE, 6, -2.1f, new Item.Properties().tab(ITProjektItemGroup.ITPROJEKT)));
+	
+	public static final RegistryObject<Item> BRONZE_HOE = ITEMS.register("bronze_hoe", () -> new HoeItem(CustomToolMaterial.BRONZE, 0, -2f, new Item.Properties().tab(ITProjektItemGroup.ITPROJEKT)));
+	
+	public static final RegistryObject<Item> BRONZE_HELMET = ITEMS.register("bronze_helmet", () -> new ArmorItem(CustomArmorMaterial.BRONZE, EquipmentSlotType.HEAD, new Item.Properties().tab(ITProjektItemGroup.ITPROJEKT)));
+	
+	public static final RegistryObject<Item> BRONZE_CHESTPLATE = ITEMS.register("bronze_chestplate", () -> new ArmorItem(CustomArmorMaterial.BRONZE, EquipmentSlotType.CHEST, new Item.Properties().tab(ITProjektItemGroup.ITPROJEKT)));
+	
+	public static final RegistryObject<Item> BRONZE_LEGGINGS = ITEMS.register("bronze_leggings", () -> new ArmorItem(CustomArmorMaterial.BRONZE, EquipmentSlotType.LEGS, new Item.Properties().tab(ITProjektItemGroup.ITPROJEKT)));
+	
+	public static final RegistryObject<Item> BRONZE_BOOTS = ITEMS.register("bronze_boots", () -> new ArmorItem(CustomArmorMaterial.BRONZE, EquipmentSlotType.FEET, new Item.Properties().tab(ITProjektItemGroup.ITPROJEKT)));
 	
 	
 }
