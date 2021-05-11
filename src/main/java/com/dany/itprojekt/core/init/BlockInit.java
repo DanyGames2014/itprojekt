@@ -2,6 +2,7 @@ package com.dany.itprojekt.core.init;
 
 import com.dany.itprojekt.ProjektMod;
 import com.dany.itprojekt.common.block.DisplayCaseBlock;
+import com.dany.itprojekt.common.block.KrateBlock;
 import com.dany.itprojekt.common.block.QuarryBlock;
 
 import net.minecraft.block.AbstractBlock;
@@ -45,4 +46,6 @@ public class BlockInit {
 	public static final RegistryObject<Block> QUARRY = BLOCKS.register("quarry", () -> new QuarryBlock());
 	
 	public static final RegistryObject<Block> DISPLAY_CASE = BLOCKS.register("display_case", () -> new DisplayCaseBlock());
+	
+	public static final RegistryObject<Block> KRATE = BLOCKS.register("krate", () -> new KrateBlock());
 }

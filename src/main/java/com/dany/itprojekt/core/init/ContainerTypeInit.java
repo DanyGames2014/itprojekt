@@ -2,6 +2,7 @@ package com.dany.itprojekt.core.init;
 
 import com.dany.itprojekt.ProjektMod;
 import com.dany.itprojekt.common.container.DisplayCaseContainer;
+import com.dany.itprojekt.common.container.KrateContainer;
 
 import net.minecraft.inventory.container.ContainerType;
 import net.minecraftforge.common.extensions.IForgeContainerType;
@@ -15,4 +16,6 @@ public class ContainerTypeInit {
 			.create(ForgeRegistries.CONTAINERS, ProjektMod.MOD_ID);
 	
 	public static final RegistryObject<ContainerType<DisplayCaseContainer>> DISPLAY_CASE_CONTAINER_TYPE = CONTAINER_TYPE.register("display_case", () -> IForgeContainerType.create(DisplayCaseContainer::new));
+	
+	public static final RegistryObject<ContainerType<KrateContainer>> KRATE_CONTAINER_TYPE = CONTAINER_TYPE.register("krate", () -> IForgeContainerType.create(KrateContainer::new));
 }
