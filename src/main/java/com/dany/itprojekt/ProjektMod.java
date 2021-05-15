@@ -37,20 +37,22 @@ public class ProjektMod {
 	public static final String MOD_ID = "itprojekt";
 
 	public ProjektMod() {
-		IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
+		IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus(); // Gets the bus
 		
+		// Adds all the inits onto the bus
 		ItemInit.ITEMS.register(bus);
 		TileEntityTypesInit.TILE_ENTITY_TYPE.register(bus);
 		BlockInit.BLOCKS.register(bus);
 		ContainerTypeInit.CONTAINER_TYPE.register(bus);
 		
+		// Adds a listener for oregen
 		MinecraftForge.EVENT_BUS.register(this);
 		MinecraftForge.EVENT_BUS.addListener(EventPriority.HIGH, FeatureInit::addOres);
 		
 	}
 	
 	@SubscribeEvent
-	public static void onRegisterItems(final RegistryEvent.Register<Item> event) {
+	public static void onRegisterItems(final RegistryEvent.Register<Item> event) { // Automatically creates Block Items
 		BlockInit.BLOCKS.getEntries().stream().map(RegistryObject::get).forEach(block -> {
 			event.getRegistry().register(new BlockItem(block, new Item.Properties().tab(ITProjektItemGroup.ITPROJEKT)).setRegistryName(block.getRegistryName()));
 		});

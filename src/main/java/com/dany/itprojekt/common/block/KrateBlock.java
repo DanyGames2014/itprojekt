@@ -31,16 +31,16 @@ import net.minecraftforge.fml.network.NetworkHooks;
 public class KrateBlock extends Block {
 
 	public KrateBlock() {
-		super(AbstractBlock.Properties.of(Material.METAL, MaterialColor.COLOR_LIGHT_GRAY).strength(5f, 20f).sound(SoundType.METAL));
+		super(AbstractBlock.Properties.of(Material.METAL, MaterialColor.COLOR_LIGHT_GRAY).strength(5f, 20f).sound(SoundType.METAL)); // Assigns the properties
 	}
 
 	@Override
-	public boolean hasTileEntity(BlockState state) {
+	public boolean hasTileEntity(BlockState state) { // Tells minecraft its a tile Entity
 		return true;
 	}
 
 	@Override
-	public TileEntity createTileEntity(BlockState state, IBlockReader world) {
+	public TileEntity createTileEntity(BlockState state, IBlockReader world) { // Creates the tile entity using a already registered tile entity type
 		return TileEntityTypesInit.KRATE_TILE_ENTITY_TYPE.get().create();
 	}
 
@@ -48,22 +48,22 @@ public class KrateBlock extends Block {
 	public ActionResultType use(BlockState state, World world, BlockPos pos, PlayerEntity player, Hand hand,
 			BlockRayTraceResult rayTrace) {
 
-		if (!world.isClientSide) {
+		if (!world.isClientSide) { // Only works on Client
 
 			TileEntity te = world.getBlockEntity(pos);
 			if (te instanceof KrateTileEntity) {
 				NetworkHooks.openGui((ServerPlayerEntity) player, (KrateTileEntity) te, pos);
-				return ActionResultType.SUCCESS;
+				return ActionResultType.SUCCESS; // Swings hand
 			}
 
 		}
 
-		return ActionResultType.SUCCESS;
+		return ActionResultType.SUCCESS; // Swings hand
 		// return super.use(state, world, pos, player, hand, rayTrace);
 	}
 
 	@Override
-	public void onRemove(BlockState state, World level, BlockPos pos, BlockState stateNew, boolean p_196243_5_) {
+	public void onRemove(BlockState state, World level, BlockPos pos, BlockState stateNew, boolean p_196243_5_) { // Drops the contents on removal
 		InventoryHelper.dropContents(level, pos, (IInventory) level.getBlockEntity(pos));
 	}
 

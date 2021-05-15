@@ -8,7 +8,6 @@ import com.dany.itprojekt.core.init.ContainerTypeInit;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.player.PlayerInventory;
 import net.minecraft.inventory.IInventory;
-import net.minecraft.inventory.InventoryHelper;
 import net.minecraft.inventory.container.Container;
 import net.minecraft.inventory.container.Slot;
 import net.minecraft.item.ItemStack;
@@ -32,7 +31,7 @@ public class DisplayCaseContainer extends Container{
 		this.tile = tile;
 		this.canInteractWithCallable = IWorldPosCallable.create(tile.getLevel(), tile.getBlockPos());
 		
-		// Tile Entity
+		// Adds the container slots
 		this.addSlot(new Slot((IInventory) tile, 0, 80, 35));
 		
 		// Player Inventory
@@ -56,10 +55,10 @@ public class DisplayCaseContainer extends Container{
 	}
 	
 	private static DisplayCaseTileEntity getTileEntity(final PlayerInventory playerInv, final PacketBuffer data) {
-		Objects.requireNonNull(playerInv, "Player Inventory can't be null");
-		Objects.requireNonNull(data, "Packet Buffer can't be null");
+		Objects.requireNonNull(playerInv, "Player Inventory can't be null"); // Errors out if player inventory data isnt received
+		Objects.requireNonNull(data, "Packet Buffer can't be null"); // Errors out if the tile entity inventory isnt received
 		final TileEntity tile = playerInv.player.level.getBlockEntity(data.readBlockPos());
-		if (tile instanceof DisplayCaseTileEntity) {
+		if (tile instanceof DisplayCaseTileEntity) { // Checks if the blocks is really the correct block
 			return (DisplayCaseTileEntity) tile;
 		}
 		
@@ -73,11 +72,11 @@ public class DisplayCaseContainer extends Container{
 	
 	
 	@Override
-	public ItemStack quickMoveStack(PlayerEntity player, int index) {
+	public ItemStack quickMoveStack(PlayerEntity player, int index) { // Handling of shift moving the stacks
 		ItemStack stack = ItemStack.EMPTY;
 		Slot slot = this.slots.get(index);
 		
-		if(slot != null && slot.hasItem()) {
+		if(slot != null && slot.hasItem()) { // Checks whats the next avalible slot id if there is any
 			ItemStack stack1 = slot.getItem();
 			stack = stack1.copy();
 			if (index < DisplayCaseTileEntity.slots && !this.moveItemStackTo(stack1, DisplayCaseTileEntity.slots, this.slots.size(), true)) {

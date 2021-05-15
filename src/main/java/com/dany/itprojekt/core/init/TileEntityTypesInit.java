@@ -19,7 +19,7 @@ import net.minecraftforge.registries.ForgeRegistries;
 public class TileEntityTypesInit {
 
 	public static final DeferredRegister<TileEntityType<?>> TILE_ENTITY_TYPE = DeferredRegister
-			.create(ForgeRegistries.TILE_ENTITIES, ProjektMod.MOD_ID);
+			.create(ForgeRegistries.TILE_ENTITIES, ProjektMod.MOD_ID); // Creates the DeferreRegister to register all the tile entities
 
 	public static final RegistryObject<TileEntityType<QuarryTileEntity>> QUARRY_TILE_ENTITY_TYPE = TILE_ENTITY_TYPE
 			.register("quarry", () -> TileEntityType.Builder.of(QuarryTileEntity::new, BlockInit.QUARRY.get()).build(null));

@@ -20,16 +20,16 @@ import net.minecraft.world.IBlockReader;
 public class QuarryBlock extends Block{
 
 	public QuarryBlock() {
-		super(AbstractBlock.Properties.of(Material.METAL, MaterialColor.COLOR_LIGHT_GRAY).strength(5f, 20f).sound(SoundType.METAL));
+		super(AbstractBlock.Properties.of(Material.METAL, MaterialColor.COLOR_LIGHT_GRAY).strength(5f, 20f).sound(SoundType.METAL)); // Assigns the properties
 	}
 	
 	@Override
-	public boolean hasTileEntity(BlockState state) {
+	public boolean hasTileEntity(BlockState state) { // Tels minecraft its Tile Entity
 		return true;
 	}
 	
 	@Override
-	public TileEntity createTileEntity(BlockState state, IBlockReader world) {
+	public TileEntity createTileEntity(BlockState state, IBlockReader world) { // Creates the Tile Entity
 		return TileEntityTypesInit.QUARRY_TILE_ENTITY_TYPE.get().create();
 	}
 	

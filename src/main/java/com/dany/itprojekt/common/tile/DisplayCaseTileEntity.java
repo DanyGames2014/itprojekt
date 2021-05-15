@@ -27,8 +27,10 @@ import net.minecraft.world.World;
  */
 public class DisplayCaseTileEntity extends LockableLootTileEntity{
 	
+	// Slot count
 	public static int slots = 1;
 	
+	// Creates an ArrayList to store the items
 	protected NonNullList<ItemStack> items = NonNullList.withSize(slots, ItemStack.EMPTY);
 	
 	protected DisplayCaseTileEntity(TileEntityType<?> type) {
@@ -54,7 +56,8 @@ public class DisplayCaseTileEntity extends LockableLootTileEntity{
 		this.items = itemsIN;
 		
 	}
-
+	
+	// Gets the name of the container from the lang file
 	@Override
 	protected ITextComponent getDefaultName() {
 		return new TranslationTextComponent("container."+ProjektMod.MOD_ID+".display_case");
@@ -65,7 +68,7 @@ public class DisplayCaseTileEntity extends LockableLootTileEntity{
 		return new DisplayCaseContainer(id, player, this);
 	}
 	
-	public CompoundNBT save(CompoundNBT nbt) {
+	public CompoundNBT save(CompoundNBT nbt) { // Saves the bock nbt Data
 		super.save(nbt);
 		if(!this.trySaveLootTable(nbt)) {
 			ItemStackHelper.saveAllItems(nbt, this.items);
@@ -75,7 +78,7 @@ public class DisplayCaseTileEntity extends LockableLootTileEntity{
 	}
 	
 	@Override
-	public void load(BlockState state, CompoundNBT nbt) {
+	public void load(BlockState state, CompoundNBT nbt) { // Loads the block NBT Data
 		super.load(state, nbt);
 		
 		this.items = NonNullList.withSize(getContainerSize(), ItemStack.EMPTY);

@@ -24,9 +24,11 @@ import net.minecraft.util.text.TranslationTextComponent;
  *
  */
 public class KrateTileEntity extends LockableLootTileEntity{
-	
+
+// Slot count
 public static int slots = 27;
 	
+	// Creates an ArrayList that will be containing the inventory
 	protected NonNullList<ItemStack> items = NonNullList.withSize(slots, ItemStack.EMPTY);
 	
 	protected KrateTileEntity(TileEntityType<?> type) {
@@ -38,23 +40,23 @@ public static int slots = 27;
 	}
 
 	@Override
-	public int getContainerSize() {
+	public int getContainerSize() { // Size
 		return 27;
 	}
 	
 	@Override
-	protected NonNullList<ItemStack> getItems() {
+	protected NonNullList<ItemStack> getItems() { // Getter for items
 		return this.items;
 	}
 
 	@Override
-	protected void setItems(NonNullList<ItemStack> itemsIN) {
+	protected void setItems(NonNullList<ItemStack> itemsIN) { // Setter for items
 		this.items = itemsIN;
 		
 	}
 
 	@Override
-	protected ITextComponent getDefaultName() {
+	protected ITextComponent getDefaultName() { // Gets the container name from lang file
 		return new TranslationTextComponent("container."+ProjektMod.MOD_ID+".krate");
 	}
 
@@ -63,7 +65,7 @@ public static int slots = 27;
 		return new KrateContainer(id, player, this);
 	}
 	
-	public CompoundNBT save(CompoundNBT nbt) {
+	public CompoundNBT save(CompoundNBT nbt) { // Saves the block NBT data
 		super.save(nbt);
 		if(!this.trySaveLootTable(nbt)) {
 			ItemStackHelper.saveAllItems(nbt, this.items);
@@ -73,7 +75,7 @@ public static int slots = 27;
 	}
 	
 	@Override
-	public void load(BlockState state, CompoundNBT nbt) {
+	public void load(BlockState state, CompoundNBT nbt) { // Loads the block NBT data
 		super.load(state, nbt);
 		
 		this.items = NonNullList.withSize(getContainerSize(), ItemStack.EMPTY);

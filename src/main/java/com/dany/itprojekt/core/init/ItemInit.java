@@ -19,11 +19,13 @@ import net.minecraftforge.registries.ForgeRegistries;
 
 /**
  * 
- * @author Daniel
+ * @author Daniel Fildán
+ * This class registers all the items using the new DeferredRegister
  *
  */
+
 public class ItemInit {
-	public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, ProjektMod.MOD_ID);
+	public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, ProjektMod.MOD_ID); // Creating the Deferred Register to register all the items
 	
 	public static final RegistryObject<Item> TEST_ITEM = ITEMS.register("test_item", () -> new Item(new Item.Properties().tab(ITProjektItemGroup.ITPROJEKT)));
 	

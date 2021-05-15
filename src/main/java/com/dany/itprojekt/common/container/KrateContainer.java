@@ -26,12 +26,12 @@ public class KrateContainer extends Container{
 	public final KrateTileEntity tile;
 	private final IWorldPosCallable canInteractWithCallable;
 	
-	public KrateContainer(final int windowId, final PlayerInventory playerInv, final KrateTileEntity tile) {
+	public KrateContainer(final int windowId, final PlayerInventory playerInv, final KrateTileEntity tile) { // Constructor 
 		super(ContainerTypeInit.KRATE_CONTAINER_TYPE.get(), windowId);
 		this.tile = tile;
-		this.canInteractWithCallable = IWorldPosCallable.create(tile.getLevel(), tile.getBlockPos());
+		this.canInteractWithCallable = IWorldPosCallable.create(tile.getLevel(), tile.getBlockPos()); // Defines if player is able to interact with the block
 		
-		// Tile Entity
+		// Tile Entity Inventory slots
 		// addSlot(Slot,TileEntita,SlotId,X,Y)
 		this.addSlot(new Slot((IInventory) tile, 0, 8, 14));
 		
@@ -62,10 +62,10 @@ public class KrateContainer extends Container{
 	}
 	
 	private static KrateTileEntity getTileEntity(final PlayerInventory playerInv, final PacketBuffer data) {
-		Objects.requireNonNull(playerInv, "Player Inventory can't be null");
-		Objects.requireNonNull(data, "Packet Buffer can't be null");
+		Objects.requireNonNull(playerInv, "Player Inventory can't be null"); // Player Inventory cannot be null
+		Objects.requireNonNull(data, "Packet Buffer can't be null"); // Tile Entity inventory cannot be null
 		final TileEntity tile = playerInv.player.level.getBlockEntity(data.readBlockPos());
-		if (tile instanceof KrateTileEntity) {
+		if (tile instanceof KrateTileEntity) { // Checks if its the correct TE
 			return (KrateTileEntity) tile;
 		}
 		
@@ -83,7 +83,7 @@ public class KrateContainer extends Container{
 		ItemStack stack = ItemStack.EMPTY;
 		Slot slot = this.slots.get(index);
 		
-		if(slot != null && slot.hasItem()) {
+		if(slot != null && slot.hasItem()) { // Quick moving items into the container,  like shift clicking or using a hopper, checks if there is a slot avalible and if there is tells the game which slot it 
 			ItemStack stack1 = slot.getItem();
 			stack = stack1.copy();
 			if (index < KrateTileEntity.slots && !this.moveItemStackTo(stack1, KrateTileEntity.slots, this.slots.size(), true)) {

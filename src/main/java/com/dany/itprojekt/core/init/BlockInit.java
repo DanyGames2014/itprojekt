@@ -23,7 +23,7 @@ import net.minecraftforge.registries.ForgeRegistries;
  */
 public class BlockInit {
 	public static final DeferredRegister<Block> BLOCKS = DeferredRegister.create(ForgeRegistries.BLOCKS,
-			ProjektMod.MOD_ID);
+			ProjektMod.MOD_ID); // Creates the DeferredRegister which all the blocks will be registered to
 
 	public static final RegistryObject<Block> TEST_BLOCK = BLOCKS.register("test_block",
 			() -> new Block(AbstractBlock.Properties.of(Material.METAL, MaterialColor.COLOR_RED).strength(5f, 1f)

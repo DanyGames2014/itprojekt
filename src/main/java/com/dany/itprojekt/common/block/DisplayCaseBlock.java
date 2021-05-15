@@ -32,16 +32,16 @@ import net.minecraftforge.fml.network.NetworkHooks;
 public class DisplayCaseBlock extends Block {
 	
 	public DisplayCaseBlock() {
-		super(AbstractBlock.Properties.of(Material.METAL, MaterialColor.COLOR_LIGHT_GRAY).strength(5f, 20f).sound(SoundType.METAL));
+		super(AbstractBlock.Properties.of(Material.METAL, MaterialColor.COLOR_LIGHT_GRAY).strength(5f, 20f).sound(SoundType.METAL)); //Assigns the properties
 	}
 	
 	@Override
-	public boolean hasTileEntity(BlockState state) {
+	public boolean hasTileEntity(BlockState state) { // Tells Minecraft that its a tile entity
 		return true;
 	}
 	
 	@Override
-	public TileEntity createTileEntity(BlockState state, IBlockReader world) {
+	public TileEntity createTileEntity(BlockState state, IBlockReader world) { // Creates the Tile Entity
 		return TileEntityTypesInit.DISPLAY_CASE_TILE_ENTITY_TYPE.get().create();
 	}
 	
@@ -49,13 +49,13 @@ public class DisplayCaseBlock extends Block {
 	@Override
 	public ActionResultType use(BlockState state, World world, BlockPos pos,PlayerEntity player, Hand hand, BlockRayTraceResult rayTrace) {
 		
-		if(!world.isClientSide) {
+		if(!world.isClientSide) { // Only works if this is a client and not a server
 			
 			
 			TileEntity te = world.getBlockEntity(pos);
 			if (te instanceof DisplayCaseTileEntity) {
 				NetworkHooks.openGui((ServerPlayerEntity) player, (DisplayCaseTileEntity) te, pos);
-				return ActionResultType.SUCCESS;
+				return ActionResultType.SUCCESS; // Makes it so the hand swings
 			}
 			
 			
@@ -67,7 +67,7 @@ public class DisplayCaseBlock extends Block {
 	}
 	
 	@Override
-	public void onRemove(BlockState state, World level, BlockPos pos, BlockState stateNew,boolean p_196243_5_) {
+	public void onRemove(BlockState state, World level, BlockPos pos, BlockState stateNew,boolean p_196243_5_) { // When the block is removed, the inventory is saved
 		InventoryHelper.dropContents(level, pos, (IInventory) level.getBlockEntity(pos));
 	}
 	

@@ -22,7 +22,7 @@ public class ClientEventBusSubscriber {
 	
 	
 	@SubscribeEvent
-	public static void clientSetup(FMLClientSetupEvent event) {
+	public static void clientSetup(FMLClientSetupEvent event) { // Registers the screen manager during the game loading
 		ScreenManager.register(ContainerTypeInit.DISPLAY_CASE_CONTAINER_TYPE.get(), DisplayCaseScreen::new);
 		ScreenManager.register(ContainerTypeInit.KRATE_CONTAINER_TYPE.get(), KrateScreen::new);
 		
