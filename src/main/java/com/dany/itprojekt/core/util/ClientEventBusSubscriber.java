@@ -11,7 +11,12 @@ import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventBusSubscriber.Bus;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
-
+/**
+ * 
+ * @author Daniel Fildán
+ * Registers events for certain GUI blocks
+ *
+ */
 @Mod.EventBusSubscriber(modid = ProjektMod.MOD_ID, bus = Bus.MOD , value = Dist.CLIENT)
 public class ClientEventBusSubscriber {
 	

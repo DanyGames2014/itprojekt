@@ -7,6 +7,12 @@ import net.minecraft.tileentity.ITickableTileEntity;
 import net.minecraft.tileentity.TileEntity;
 import net.minecraft.tileentity.TileEntityType;
 
+/**
+ * 
+ * @author Daniel Fildán
+ * This class defines the logic for Quarry Tile Entity
+ *
+ */
 public class QuarryTileEntity extends TileEntity implements ITickableTileEntity{
 
 	public QuarryTileEntity(TileEntityType<?> tileType) {

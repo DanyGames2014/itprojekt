@@ -11,6 +11,12 @@ import net.minecraft.block.material.MaterialColor;
 import net.minecraft.tileentity.TileEntity;
 import net.minecraft.world.IBlockReader;
 
+/**
+ * 
+ * @author Daniel Fildán
+ * This makes the Quarry Block an Tile Entity
+ *
+ */
 public class QuarryBlock extends Block{
 
 	public QuarryBlock() {

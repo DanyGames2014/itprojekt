@@ -15,6 +15,12 @@ import net.minecraft.network.PacketBuffer;
 import net.minecraft.tileentity.TileEntity;
 import net.minecraft.util.IWorldPosCallable;
 
+/**
+ * 
+ * @author Daniel Fildán
+ * This creates container of Krate
+ *
+ */
 public class KrateContainer extends Container{
 	
 	public final KrateTileEntity tile;

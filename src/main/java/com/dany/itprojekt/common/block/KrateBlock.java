@@ -22,6 +22,12 @@ import net.minecraft.world.IBlockReader;
 import net.minecraft.world.World;
 import net.minecraftforge.fml.network.NetworkHooks;
 
+/**
+ * 
+ * @author Daniel Fildán
+ * This makes the Krate Block a tile entity and also handles the droping of items on its removal and opening the container screen when right clicked
+ *
+ */
 public class KrateBlock extends Block {
 
 	public KrateBlock() {

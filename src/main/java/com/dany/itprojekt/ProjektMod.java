@@ -22,6 +22,13 @@ import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventBusSubscriber.Bus;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 
+/**
+ * 
+ * @author Daniel Fildán
+ * This is the main class, it defines the modid and registers all the initializers onto the bus and adds listener for certain events such as ore gen
+ * It also automatically Reigsters all the block items so it doesnt have to be done manually
+ *
+ */
 @Mod("itprojekt")
 @Mod.EventBusSubscriber(modid = ProjektMod.MOD_ID, bus = Bus.MOD)
 public class ProjektMod {

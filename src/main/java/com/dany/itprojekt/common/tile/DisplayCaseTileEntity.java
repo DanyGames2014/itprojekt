@@ -19,6 +19,12 @@ import net.minecraft.util.text.ITextComponent;
 import net.minecraft.util.text.TranslationTextComponent;
 import net.minecraft.world.World;
 
+/**
+ * 
+ * @author Daniel Fildán
+ * This class defines the logic for DisplayCase Tile Entity
+ *
+ */
 public class DisplayCaseTileEntity extends LockableLootTileEntity{
 	
 	public static int slots = 1;

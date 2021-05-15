@@ -16,6 +16,12 @@ import net.minecraft.network.PacketBuffer;
 import net.minecraft.tileentity.TileEntity;
 import net.minecraft.util.IWorldPosCallable;
 
+/**
+ * 
+ * @author Daniel Fildán
+ * This creates the container of DisplayCase
+ *
+ */
 public class DisplayCaseContainer extends Container{
 	
 	public final DisplayCaseTileEntity tile;

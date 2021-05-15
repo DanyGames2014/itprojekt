@@ -10,6 +10,12 @@ import net.minecraftforge.fml.RegistryObject;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 
+/**
+ * 
+ * @author Daniel Fildán
+ * This class registers all the containers using the DeferredRegister
+ *
+ */
 public class ContainerTypeInit {
 	
 	public static final DeferredRegister<ContainerType<?>> CONTAINER_TYPE = DeferredRegister

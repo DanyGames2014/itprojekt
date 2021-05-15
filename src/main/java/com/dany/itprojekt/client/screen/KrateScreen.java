@@ -12,6 +12,12 @@ import net.minecraft.util.text.ITextComponent;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.api.distmarker.OnlyIn;
 
+/**
+ * 
+ * @author Daniel Fildán
+ * This creates the screen renderer for Krate
+ *
+ */
 @OnlyIn(Dist.CLIENT)
 public class KrateScreen extends ContainerScreen<KrateContainer>{
 		

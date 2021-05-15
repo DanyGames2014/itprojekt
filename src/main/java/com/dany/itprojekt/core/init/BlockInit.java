@@ -15,6 +15,12 @@ import net.minecraftforge.fml.RegistryObject;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 
+/**
+ * 
+ * @author Daniel Fildán
+ * This class registers all the blocks and assigns their properties using DeferredRegister
+ *
+ */
 public class BlockInit {
 	public static final DeferredRegister<Block> BLOCKS = DeferredRegister.create(ForgeRegistries.BLOCKS,
 			ProjektMod.MOD_ID);

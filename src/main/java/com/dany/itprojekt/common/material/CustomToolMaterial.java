@@ -7,6 +7,12 @@ import com.dany.itprojekt.core.init.ItemInit;
 import net.minecraft.item.IItemTier;
 import net.minecraft.item.crafting.Ingredient;
 
+/**
+ * 
+ * @author Daniel Fildán
+ * This defines the materials derived from various materials
+ *
+ */
 public enum CustomToolMaterial implements IItemTier {
 	
 	COPPER(2, 230, 6f, 0f, 7, () -> Ingredient.of(ItemInit.COPPER_INGOT.get())),

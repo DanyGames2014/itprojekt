@@ -10,6 +10,12 @@ import net.minecraftforge.fml.RegistryObject;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 
+/**
+ * 
+ * @author Daniel Fildán
+ * Registers Tile Entities using the DeferredRegister
+ *
+ */
 public class TileEntityTypesInit {
 
 	public static final DeferredRegister<TileEntityType<?>> TILE_ENTITY_TYPE = DeferredRegister

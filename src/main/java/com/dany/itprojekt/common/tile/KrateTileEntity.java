@@ -16,9 +16,16 @@ import net.minecraft.util.NonNullList;
 import net.minecraft.util.text.ITextComponent;
 import net.minecraft.util.text.TranslationTextComponent;
 
+
+/**
+ * 
+ * @author Daniel Fildán
+ * This calss defines the logic for the Krate Tile Entity
+ *
+ */
 public class KrateTileEntity extends LockableLootTileEntity{
 	
-public static int slots = 81;
+public static int slots = 27;
 	
 	protected NonNullList<ItemStack> items = NonNullList.withSize(slots, ItemStack.EMPTY);
 	
@@ -32,7 +39,7 @@ public static int slots = 81;
 
 	@Override
 	public int getContainerSize() {
-		return 81;
+		return 27;
 	}
 	
 	@Override

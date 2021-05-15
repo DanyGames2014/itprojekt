@@ -11,6 +11,12 @@ import net.minecraft.world.gen.placement.Placement;
 import net.minecraft.world.gen.placement.TopSolidRangeConfig;
 import net.minecraftforge.event.world.BiomeLoadingEvent;
 
+/**
+ * 
+ * @author Daniel Fildán
+ * This class adds ore generation
+ *
+ */
 public class FeatureInit {
 	
 	public static void addOres(final BiomeLoadingEvent event) {

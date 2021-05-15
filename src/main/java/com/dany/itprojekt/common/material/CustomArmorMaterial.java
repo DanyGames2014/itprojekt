@@ -10,6 +10,12 @@ import net.minecraft.item.crafting.Ingredient;
 import net.minecraft.util.SoundEvent;
 import net.minecraft.util.SoundEvents;
 
+/**
+ * 
+ * @author Daniel Fildán
+ * This defines the materials derived from various materials for armor
+ *
+ */
 public enum CustomArmorMaterial implements IArmorMaterial {
 	
 	COPPER("copper", 2, new int[] {2,4,5,2}, 8, SoundEvents.ARMOR_EQUIP_IRON, 0f, 0.1f, () -> Ingredient.of(ItemInit.COPPER_INGOT.get())),
