@@ -1,0 +1,25 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"pattern": [
+		"SCS",
+		"CLC",
+		"SCS"
+	],
+	"key": {
+		"C":{
+			"tag" : "forge:ingots/copper"
+		},
+		"S":{
+			"item" : "minecraft:stone"
+		},
+		"L":{
+			"tag" : "minecraft:logs"
+		}
+
+	},
+
+	"result": {
+		"item": "itprojekt:krate",
+		"count": 1
+	}
+}
