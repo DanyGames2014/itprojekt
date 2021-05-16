@@ -24,12 +24,10 @@ import net.minecraft.util.IWorldPosCallable;
 public class DisplayCaseContainer extends Container{
 	
 	public final DisplayCaseTileEntity tile;
-	private final IWorldPosCallable canInteractWithCallable;
-	
 	public DisplayCaseContainer(final int windowId, final PlayerInventory playerInv, final DisplayCaseTileEntity tile) {
 		super(ContainerTypeInit.DISPLAY_CASE_CONTAINER_TYPE.get(), windowId);
 		this.tile = tile;
-		this.canInteractWithCallable = IWorldPosCallable.create(tile.getLevel(), tile.getBlockPos());
+		IWorldPosCallable.create(tile.getLevel(), tile.getBlockPos());
 		
 		// Adds the container slots
 		this.addSlot(new Slot((IInventory) tile, 0, 80, 35));

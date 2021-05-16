@@ -24,35 +24,39 @@ import net.minecraft.util.IWorldPosCallable;
 public class KrateContainer extends Container{
 	
 	public final KrateTileEntity tile;
-	private final IWorldPosCallable canInteractWithCallable;
-	
 	public KrateContainer(final int windowId, final PlayerInventory playerInv, final KrateTileEntity tile) { // Constructor 
 		super(ContainerTypeInit.KRATE_CONTAINER_TYPE.get(), windowId);
 		this.tile = tile;
-		this.canInteractWithCallable = IWorldPosCallable.create(tile.getLevel(), tile.getBlockPos()); // Defines if player is able to interact with the block
+		IWorldPosCallable.create(tile.getLevel(), tile.getBlockPos());
 		
 		// Tile Entity Inventory slots
 		// addSlot(Slot,TileEntita,SlotId,X,Y)
-		this.addSlot(new Slot((IInventory) tile, 0, 8, 14));
-		
-		/*for(int row = 0; row < 9; row++) {
-			for(int col = 0; col < 9; col++) {
-				this.addSlot(new Slot((IInventory) tile, col + row * 9 + 9, 8 + col * 18, 166 - (4-row) * 18 - 10)); // Adding Slots to the inventory
+		//this.addSlot(new Slot((IInventory) tile, 0, 8, 14));
+		int row = 0;
+		int col = 0;
+		for(row = 0; row < 3; row++) {
+			for(col = 0; col < 9; col++) {
+				System.out.println("col = " + col + " row = " + row);
+				this.addSlot(new Slot((IInventory) tile, col + row * 9, 8 + col * 18,110 - 14 - (4-row) * 18 - 10)); // Adding Slots to the inventory
+				System.out.println("success col = " + col + " row = " + row);
 			}
-		}*/
+		}
 		
+		
+		row = 0;
+		col = 0;
 		// Player Inventory
 		// col - column in inventory
 		// row - row in inventory
 		// 9 - amount of slots in one row
-		for(int row = 0; row < 3; row++) {
-			for(int col = 0; col < 9; col++) {
+		for(row = 0; row < 3; row++) {
+			for(col = 0; col < 9; col++) {
 				this.addSlot(new Slot(playerInv, col + row * 9 + 9, 8 + col * 18, 166 - (4-row) * 18 - 10));
 			}
 		}
 		
 		// Player Hotbar
-		for(int col = 0; col < 9; col++) {
+		for(col = 0; col < 9; col++) {
 			this.addSlot(new Slot(playerInv,col, 8 + col * 18, 142));
 		}
 	}

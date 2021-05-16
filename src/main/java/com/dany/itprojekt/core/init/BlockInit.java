@@ -46,7 +46,7 @@ public class BlockInit {
 					.harvestTool(ToolType.PICKAXE).harvestLevel(1).sound(SoundType.METAL)));
 	
 	public static final RegistryObject<Block> BRONZE_BLOCK = BLOCKS.register("bronze_block",
-			() -> new Block(AbstractBlock.Properties.of(Material.HEAVY_METAL, MaterialColor.COLOR_LIGHT_GRAY).strength(3f, 3f) // approx 255,100,25
+			() -> new Block(AbstractBlock.Properties.of(Material.HEAVY_METAL, MaterialColor.COLOR_LIGHT_GRAY).strength(3f, 3f) // 255,150,30
 					.harvestTool(ToolType.PICKAXE).harvestLevel(1).sound(SoundType.METAL)));
 	
 	public static final RegistryObject<Block> QUARRY = BLOCKS.register("quarry", () -> new QuarryBlock());

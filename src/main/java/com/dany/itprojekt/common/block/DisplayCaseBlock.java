@@ -20,7 +20,6 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.BlockRayTraceResult;
 import net.minecraft.world.IBlockReader;
 import net.minecraft.world.World;
-import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.fml.network.NetworkHooks;
 
 /**
@@ -45,7 +44,6 @@ public class DisplayCaseBlock extends Block {
 		return TileEntityTypesInit.DISPLAY_CASE_TILE_ENTITY_TYPE.get().create();
 	}
 	
-	@SuppressWarnings("deprecation")
 	@Override
 	public ActionResultType use(BlockState state, World world, BlockPos pos,PlayerEntity player, Hand hand, BlockRayTraceResult rayTrace) {
 		

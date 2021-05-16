@@ -47,7 +47,7 @@ public enum CustomArmorMaterial implements IArmorMaterial {
 
 	@Override
 	public int getDurabilityForSlot(EquipmentSlotType slot) {
-		return this.baseDurability[slot.getIndex()] * this.durabilityMultiplier;
+		return CustomArmorMaterial.baseDurability[slot.getIndex()] * this.durabilityMultiplier;
 	}
 
 	@Override
