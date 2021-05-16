@@ -45,7 +45,11 @@
 	"block.itprojekt.tin_block" : "Tin Block",
 
 	"block.itprojekt.quarry" : "Quarry",
-	
-	
+	"block.itprojekt.display_case" : "Display Case",
+	"block.itprojekt.krate" : "Krate",
+
+	"container.itprojekt.display_case" : "Display Case",
+	"container.itprojekt.krate" : "Krate",
+
 	"itemGroup.itprojekt" : "IT Project"
 }

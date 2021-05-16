@@ -1,10 +1,55 @@
 {
 	"item.itprojekt.test_item": "Testovací Item",
-	"item.itprojekt.copper_ingot" : "Měďěný Ingot",
+	"item.itprojekt.copper_ingot": "Měďený Ingot",
+	"item.itprojekt.tin_ingot": "Cínový Ingot",
+	"item.itprojekt.bronze_ingot": "Bronzový Ingot",
+
+	"item.itprojekt.copper_sword": "Měďený meč",
+	"item.itprojekt.copper_pickaxe": "Měďený krumpáč",
+	"item.itprojekt.copper_axe": "Měďená sekera",
+	"item.itprojekt.copper_shovel": "Měďená lopata",
+	"item.itprojekt.copper_hoe": "Měďený motyka",
+
+	"item.itprojekt.copper_helmet": "Měďená helma",
+	"item.itprojekt.copper_chestplate": "Měďené torso",
+	"item.itprojekt.copper_leggings": "Měďený kalhoty",
+	"item.itprojekt.copper_boots": "Měďený boty",
 	
-	"block.itprojekt.test_block" : "Testovací Block",
-	"block.itprojekt.copper_ore" : "Měďěná Ruda",
+	"item.itprojekt.bronze_sword": "Bronzoý meč",
+	"item.itprojekt.bronze_pickaxe": "Bronzový krumpáč",
+	"item.itprojekt.bronze_axe": "Bronzová sekera",
+	"item.itprojekt.bronze_shovel": "Bronzový lopata",
+	"item.itprojekt.bronze_hoe": "Bronzová motyka",
+
+	"item.itprojekt.bronze_helmet": "Bronzová helma",
+	"item.itprojekt.bronze_chestplate": "Bronzové torso",
+	"item.itprojekt.bronze_leggings": "Bronzové kalhoty",
+	"item.itprojekt.bronze_boots": "Bronzové boty",
+
+	"item.itprojekt.tin_sword": "Cínový meč",
+	"item.itprojekt.tin_pickaxe": "Cínový krumpáč",
+	"item.itprojekt.tin_axe": "Cínová sekera",
+	"item.itprojekt.tin_shovel": "Cínová lopata",
+	"item.itprojekt.tin_hoe": "Cínová motyka",
+
+	"item.itprojekt.tin_helmet": "Cínová helma",
+	"item.itprojekt.tin_chestplate": "Cínové torso",
+	"item.itprojekt.tin_leggings": "Cínové kalhoty",
+	"item.itprojekt.tin_boots": "Cínové boty",
 	
-	
+	"block.itprojekt.test_block" : "Testovací Kostka",
+	"block.itprojekt.copper_ore" : "Měďená ruda",
+	"block.itprojekt.copper_block" : "Blok měďi",
+	"block.itprojekt.bronze_block" : "Bronzový blok",
+	"block.itprojekt.tin_ore" : "Cínová ruda",
+	"block.itprojekt.tin_block" : "Cínový blok",
+
+	"block.itprojekt.quarry" : "Odstraňovač bloků",
+	"block.itprojekt.display_case" : "Vytrína",
+	"block.itprojekt.krate" : "Bedna",
+
+	"container.itprojekt.display_case" : "Vytrína",
+	"container.itprojekt.krate" : "Bedna",
+
 	"itemGroup.itprojekt" : "IT Projekt"
 }
